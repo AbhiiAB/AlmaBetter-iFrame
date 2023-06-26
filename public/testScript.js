@@ -19,7 +19,7 @@ function handleSubmit(event) {
   const link = linkInput.value;
 
   // Store the link in Firebase
-  const fileRef = storageRef.child('links/link.txt'); // Specify the desired file path
+  const fileRef = storageRef.child('gs://almabetter-iframe.appspot.com/'); // Specify the desired file path
   fileRef.putString(link)
     .then(() => {
       console.log('Link stored successfully!');
